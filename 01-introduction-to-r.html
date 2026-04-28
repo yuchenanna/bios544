@@ -1,0 +1,379 @@
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> id </th>
+   <th style="text-align:left;"> submission_type </th>
+   <th style="text-align:left;"> answer </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> tutorial-id </td>
+   <td style="text-align:left;"> none </td>
+   <td style="text-align:left;"> introduction-to-r </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> name </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> Yuchen Gong </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> email </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> yagong@emory.edu </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ID </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> 2788730 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> working-with-data-1 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> library(tidyverse) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> working-with-data-2 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> library(tidyverse)
+── Attaching core tidyverse packages ──────────────────────────────────────────────────────────────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.6
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.1     ✔ tibble    3.3.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.2
+✔ purrr     1.2.1     
+── Conflicts ────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package to force all conflicts to become errors </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> working-with-data-3 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> diamonds
+# A tibble: 53,940 × 10
+   carat cut       color clarity depth table price     x     y     z
+   &lt;dbl&gt; &lt;ord&gt;     &lt;ord&gt; &lt;ord&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+ 1  0.23 Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
+ 2  0.21 Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
+ 3  0.23 Good      E     VS1      56.9    65   327  4.05  4.07  2.31
+ 4  0.29 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
+ 5  0.31 Good      J     SI2      63.3    58   335  4.34  4.35  2.75
+ 6  0.24 Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
+ 7  0.24 Very Good I     VVS1     62.3    57   336  3.95  3.98  2.47
+ 8  0.26 Very Good H     SI1      61.9    55   337  4.07  4.11  2.53
+ 9  0.22 Fair      E     VS2      65.1    61   337  3.87  3.78  2.49
+10  0.23 Very Good H     VS1      59.4    61   338  4     4.05  2.39
+# ℹ 53,930 more rows
+# ℹ Use `print(n = ...)` to see more rows </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> working-with-data-4 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> summary(diamonds)
+     carat               cut        color        clarity          depth           table           price             x         
+ Min.   :0.2000   Fair     : 1610   D: 6775   SI1    :13065   Min.   :43.00   Min.   :43.00   Min.   :  326   Min.   : 0.000  
+ 1st Qu.:0.4000   Good     : 4906   E: 9797   VS2    :12258   1st Qu.:61.00   1st Qu.:56.00   1st Qu.:  950   1st Qu.: 4.710  
+ Median :0.7000   Very Good:12082   F: 9542   SI2    : 9194   Median :61.80   Median :57.00   Median : 2401   Median : 5.700  
+ Mean   :0.7979   Premium  :13791   G:11292   VS1    : 8171   Mean   :61.75   Mean   :57.46   Mean   : 3933   Mean   : 5.731  
+ 3rd Qu.:1.0400   Ideal    :21551   H: 8304   VVS2   : 5066   3rd Qu.:62.50   3rd Qu.:59.00   3rd Qu.: 5324   3rd Qu.: 6.540  
+ Max.   :5.0100                     I: 5422   VVS1   : 3655   Max.   :79.00   Max.   :95.00   Max.   :18823   Max.   :10.740  
+                                    J: 2808   (Other): 2531                                                                   
+       y                z         
+ Min.   : 0.000   Min.   : 0.000  
+ 1st Qu.: 4.720   1st Qu.: 2.910  
+ Median : 5.710   Median : 3.530  
+ Mean   : 5.735   Mean   : 3.539  
+ 3rd Qu.: 6.540   3rd Qu.: 4.040  
+ Max.   :58.900   Max.   :31.800 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> working-with-data-5 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> slice_sample(diamonds)
+# A tibble: 1 × 10
+  carat cut     color clarity depth table price     x     y     z
+  &lt;dbl&gt; &lt;ord&gt;   &lt;ord&gt; &lt;ord&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1  1.04 Premium E     SI2      60.1    58  3392  6.65  6.56  3.97 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> working-with-data-6 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> slice_sample(diamonds, n=4)
+# A tibble: 4 × 10
+  carat cut     color clarity depth table price     x     y     z
+  &lt;dbl&gt; &lt;ord&gt;   &lt;ord&gt; &lt;ord&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1  0.51 Ideal   E     VS2      61.7    53  1709  5.2   5.18  3.2 
+2  0.56 Ideal   H     SI1      61.9    58  1343  5.27  5.3   3.27
+3  0.45 Fair    F     VS2      67      56   923  4.77  4.7   3.17
+4  0.32 Premium H     SI1      62      58   591  4.39  4.38  2.72 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> working-with-data-7 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> print(diamonds)
+# A tibble: 53,940 × 10
+   carat cut       color clarity depth table price     x     y     z
+   &lt;dbl&gt; &lt;ord&gt;     &lt;ord&gt; &lt;ord&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+ 1  0.23 Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
+ 2  0.21 Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
+ 3  0.23 Good      E     VS1      56.9    65   327  4.05  4.07  2.31
+ 4  0.29 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
+ 5  0.31 Good      J     SI2      63.3    58   335  4.34  4.35  2.75
+ 6  0.24 Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
+ 7  0.24 Very Good I     VVS1     62.3    57   336  3.95  3.98  2.47
+ 8  0.26 Very Good H     SI1      61.9    55   337  4.07  4.11  2.53
+ 9  0.22 Fair      E     VS2      65.1    61   337  3.87  3.78  2.49
+10  0.23 Very Good H     VS1      59.4    61   338  4     4.05  2.39
+# ℹ 53,930 more rows
+# ℹ Use `print(n = ...)` to see more rows </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> working-with-data-8 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> print(diamonds, n=3)
+# A tibble: 53,940 × 10
+  carat cut     color clarity depth table price     x     y     z
+  &lt;dbl&gt; &lt;ord&gt;   &lt;ord&gt; &lt;ord&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1  0.23 Ideal   E     SI2      61.5    55   326  3.95  3.98  2.43
+2  0.21 Premium E     SI1      59.8    61   326  3.89  3.84  2.31
+3  0.23 Good    E     VS1      56.9    65   327  4.05  4.07  2.31
+# ℹ 53,937 more rows
+# ℹ Use `print(n = ...)` to see more rows </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> working-with-data-9 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> diamonds {ggplot2}	R Documentation
+Prices of over 50,000 round cut diamonds
+Description
+A dataset containing the prices and other attributes of almost 54,000 diamonds. The variables are as follows:
+
+Usage
+diamonds
+Format
+A data frame with 53940 rows and 10 variables:
+
+price
+price in US dollars ($326–$18,823)
+
+carat
+weight of the diamond (0.2–5.01)
+
+cut
+quality of the cut (Fair, Good, Very Good, Premium, Ideal)
+
+color
+diamond colour, from D (best) to J (worst)
+
+clarity
+a measurement of how clear the diamond is (I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best))
+
+x
+length in mm (0–10.74)
+
+y
+width in mm (0–58.9)
+
+z
+depth in mm (0–31.8)
+
+depth
+total depth percentage = z / mean(x, y) = 2 * z / (x + y) (43–79)
+
+table
+width of top of diamond relative to widest point (43–95) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> working-with-data-10 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> glimpse(diamonds)
+Rows: 53,940
+Columns: 10
+$ carat   &lt;dbl&gt; 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0.22, 0.23, 0.30, 0.23, 0.22, 0.31, 0.20, 0.32, 0.30, 0.30, 0.30, 0.30…
+$ cut     &lt;ord&gt; Ideal, Premium, Good, Premium, Good, Very Good, Very Good, Very Good, Fair, Very Good, Good, Ideal, Premium, Ideal, Pr…
+$ color   &lt;ord&gt; E, E, E, I, J, J, I, H, E, H, J, J, F, J, E, E, I, J, J, J, I, E, H, J, J, G, I, J, D, F, F, F, E, E, D, F, E, H, D, I…
+$ clarity &lt;ord&gt; SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1, SI1, VS1, SI1, SI2, SI2, I1, SI2, SI1, SI1, SI1, SI2, VS2, VS1, SI…
+$ depth   &lt;dbl&gt; 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65.1, 59.4, 64.0, 62.8, 60.4, 62.2, 60.2, 60.9, 62.0, 63.4, 63.8, 62.7…
+$ table   &lt;dbl&gt; 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61, 54, 62, 58, 54, 54, 56, 59, 56, 55, 57, 62, 62, 58, 57, 57, 61, 57…
+$ price   &lt;int&gt; 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, 339, 340, 342, 344, 345, 345, 348, 351, 351, 351, 351, 352, 353, 353…
+$ x       &lt;dbl&gt; 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3.87, 4.00, 4.25, 3.93, 3.88, 4.35, 3.79, 4.38, 4.31, 4.23, 4.23, 4.21…
+$ y       &lt;dbl&gt; 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3.78, 4.05, 4.28, 3.90, 3.84, 4.37, 3.75, 4.42, 4.34, 4.29, 4.26, 4.27…
+$ z       &lt;dbl&gt; 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2.49, 2.39, 2.73, 2.46, 2.33, 2.71, 2.27, 2.68, 2.68, 2.70, 2.71, 2.66… </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> working-with-data-11 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> sqrt(144)
+[1] 12 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> working-with-data-12 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> x &lt;- sqrt(144) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> working-with-data-13 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> x
+[1] 12 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pipes-and-plots-1 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> gss_cat </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pipes-and-plots-2 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> summary(gss_cat) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pipes-and-plots-3 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> gss_cat |&gt; 
+  drop_na() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pipes-and-plots-4 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> gss_cat |&gt;
+filter(year == 2014) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pipes-and-plots-5 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> gss_cat |&gt;
+filter(year == 2014) |&gt;
+select(age, marital, race, relig, tvhours) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pipes-and-plots-6 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> gss_cat |&gt;
+filter(year == 2014) |&gt;
+select(age, marital, race, relig, tvhours) |&gt;
+summary() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pipes-and-plots-7 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> gss_cat |&gt;
+filter(year == 2014) |&gt;
+select(age, marital, race, relig, tvhours) |&gt;
+drop_na() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pipes-and-plots-8 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> gss_cat |&gt;
+arrange(tvhours) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pipes-and-plots-9 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> gss_cat |&gt;
+arrange(desc(tvhours)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pipes-and-plots-10 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> gss_cat |&gt;
+  arrange(desc(tvhours)) |&gt;
+  ggplot(aes(x = age, y = tvhours)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pipes-and-plots-11 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> gss_cat |&gt;
+  arrange(desc(tvhours)) |&gt;
+  ggplot(aes(x = age, y = tvhours)) +
+  geom_jitter() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pipes-and-plots-12 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> gss_cat |&gt;
+  arrange(desc(tvhours)) |&gt;
+  drop_na(age, tvhours) |&gt;
+  ggplot(aes(x = age, y = tvhours)) +
+  geom_jitter() +
+  labs(
+    title = "TV Hours Watched by Age",
+    subtitle = "Most people watch relatively little TV regardless of age, with a few heavy viewers at every age.",
+    x = "Age",
+    y = "TV Hours per Day"
+  ) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> generative-ai-1 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> R is an open-source programming language and environment designed for statistical computing, data analysis, and visualization, widely used in academia and industry for working with complex datasets. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> generative-ai-2 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> diamonds
+# A tibble: 53,940 × 10
+   carat cut       color clarity depth table price     x     y     z
+   &lt;dbl&gt; &lt;ord&gt;     &lt;ord&gt; &lt;ord&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+ 1  0.23 Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
+ 2  0.21 Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
+ 3  0.23 Good      E     VS1      56.9    65   327  4.05  4.07  2.31
+ 4  0.29 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
+ 5  0.31 Good      J     SI2      63.3    58   335  4.34  4.35  2.75
+ 6  0.24 Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
+ 7  0.24 Very Good I     VVS1     62.3    57   336  3.95  3.98  2.47
+ 8  0.26 Very Good H     SI1      61.9    55   337  4.07  4.11  2.53
+ 9  0.22 Fair      E     VS2      65.1    61   337  3.87  3.78  2.49
+10  0.23 Very Good H     VS1      59.4    61   338  4     4.05  2.39
+# ℹ 53,930 more rows
+# ℹ Use `print(n = ...)` to see more rows </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> generative-ai-3 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> diamonds |&gt;
++     dplyr::group_by(cut, color) |&gt;
++     dplyr::summarise(avg_carat = mean(carat, na.rm = TRUE), .groups = "drop")
+# A tibble: 35 × 3
+   cut   color avg_carat
+   &lt;ord&gt; &lt;ord&gt;     &lt;dbl&gt;
+ 1 Fair  D         0.920
+ 2 Fair  E         0.857
+ 3 Fair  F         0.905
+ 4 Fair  G         1.02 
+ 5 Fair  H         1.22 
+ 6 Fair  I         1.20 
+ 7 Fair  J         1.34 
+ 8 Good  D         0.745
+ 9 Good  E         0.745
+10 Good  F         0.776
+# ℹ 25 more rows
+# ℹ Use `print(n = ...)` to see more rows </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> generative-ai-4 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> library(tidyverse)
+
+diamonds |&gt;
+  ggplot(aes(x = carat, y = price, color = cut)) +
+  geom_point(alpha = 0.4) +
+  scale_y_continuous(labels = scales::dollar_format()) +
+  labs(
+    title = "Diamond Price Increases Rapidly with Carat Size",
+    subtitle = "Higher-quality cuts tend to command higher prices at the same carat weight",
+    x = "Carat",
+    y = "Price (USD)",
+    color = "Cut Quality"
+  ) +
+  theme_minimal() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> minutes </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> 30 </td>
+  </tr>
+</tbody>
+</table>
