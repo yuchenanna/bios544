@@ -1,0 +1,397 @@
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> id </th>
+   <th style="text-align:left;"> submission_type </th>
+   <th style="text-align:left;"> answer </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> tutorial-id </td>
+   <td style="text-align:left;"> none </td>
+   <td style="text-align:left;"> 01-data-visualization </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> name </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> yuchen gong </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> email </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> yagong@emory.edu </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ID </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> 2788730 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-1 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> library(tidyverse) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-2 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> library(palmerpenguins) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-3 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> Size measurements, clutch observations, and blood isotope ratios for adult foraging Adélie, Chinstrap, and Gentoo penguins observed on islands in the Palmer Archipelago near Palmer Station, Antarctica. Data were collected and made available by Dr. Kristen Gorman and the Palmer Station Long Term Ecological Research (LTER) Program. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-4 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> library(ggthemes) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-5 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> penguins </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-6 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> glimpse(penguins) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-7 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(data=penguins) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-8 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-9 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, mapping = aes(x = flipper_length_mm)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-10 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, mapping = aes(
+  x = flipper_length_mm,
+  y = body_mass_g
+)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-11 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, mapping = aes(
+  x = flipper_length_mm,
+  y = body_mass_g
+)) +
+  geom_point() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-12 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> penguins |&gt;
+  drop_na() |&gt;
+  ggplot(mapping = aes(
+    x = flipper_length_mm,
+    y = body_mass_g
+  )) +
+  geom_point() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-13 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> penguins |&gt;
+  drop_na() |&gt;
+  ggplot(mapping = aes(
+    x = flipper_length_mm,
+    y = body_mass_g,
+    color = species
+  )) +
+  geom_point() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-14 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> penguins |&gt;
+  drop_na() |&gt;
+  ggplot(mapping = aes(
+    x = flipper_length_mm,
+    y = body_mass_g,
+    color = species
+  )) +
+  geom_point() +
+  geom_smooth(method = "lm") </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-15 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> penguins |&gt;
+  drop_na() |&gt;
+  ggplot(mapping = aes(
+    x = flipper_length_mm,
+    y = body_mass_g,
+    color = species
+  )) +
+  geom_point() +
+  geom_smooth(method = "lm", formula = y ~ x) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-16 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> penguins |&gt;
+  drop_na() |&gt;
+  ggplot(mapping = aes(
+    x = flipper_length_mm,
+    y = body_mass_g
+  )) +
+  geom_point(mapping = aes(color = species)) +
+  geom_smooth(method = "lm", formula = y ~ x) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-17 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> penguins |&gt;
+  drop_na() |&gt;
+  ggplot(mapping = aes(
+    x = flipper_length_mm,
+    y = body_mass_g
+  )) +
+  geom_point(mapping = aes(color = species, shape = species)) +
+  geom_smooth(method = "lm", formula = y ~ x) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-18 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> penguins |&gt;
+  drop_na() |&gt;
+  ggplot(mapping = aes(
+    x = flipper_length_mm,
+    y = body_mass_g
+  )) +
+  geom_point(mapping = aes(color = species, shape = species)) +
+  geom_smooth(method = "lm", formula = y ~ x) +
+  labs(title = "Body Mass and Flipper Length") </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-19 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> penguins |&gt;
+  drop_na() |&gt;
+  ggplot(mapping = aes(
+    x = flipper_length_mm,
+    y = body_mass_g
+  )) +
+  geom_point(mapping = aes(color = species, shape = species)) +
+  geom_smooth(method = "lm", formula = y ~ x) +
+  labs(
+    title = "Body Mass and Flipper Length",
+    subtitle = "Dimensions for Adelie, Chinstrap, and Gentoo Penguins"
+  ) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-20 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> penguins |&gt;
+  drop_na() |&gt;
+  ggplot(mapping = aes(
+    x = flipper_length_mm,
+    y = body_mass_g
+  )) +
+  geom_point(mapping = aes(color = species, shape = species)) +
+  geom_smooth(method = "lm", formula = y ~ x) +
+  labs(
+    title = "Body Mass and Flipper Length",
+    subtitle = "Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
+    x = "Flipper Length (mm)",
+    y = "Body Mass (g)"
+  ) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> first-steps-21 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> penguins |&gt;
+  drop_na() |&gt;
+  ggplot(mapping = aes(
+    x = flipper_length_mm,
+    y = body_mass_g
+  )) +
+  geom_point(mapping = aes(color = species, shape = species)) +
+  geom_smooth(method = "lm", formula = y ~ x) +
+  labs(
+    title = "Body Mass and Flipper Length",
+    subtitle = "Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
+    x = "Flipper Length (mm)",
+    y = "Body Mass (g)",
+    color = "Species",
+    shape = "Species"
+  ) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ggplot2-calls-1 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(
+  data = penguins,
+  mapping = aes(x = flipper_length_mm, y = body_mass_g)
+) +
+  geom_point() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ggplot2-calls-2 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) + 
+  geom_point() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ggplot2-calls-3 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> penguins |&gt; 
+  drop_na() |&gt; 
+  ggplot(aes(x = flipper_length_mm, y = body_mass_g)) + 
+  geom_point() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-distributions-1 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = species)) +
+  geom_bar() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-distributions-2 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = fct_infreq(species))) +
+  geom_bar() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-distributions-3 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = body_mass_g)) +
+  geom_histogram(binwidth = 200) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-distributions-4 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = body_mass_g)) +
+  geom_histogram(binwidth = 20) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-distributions-5 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = body_mass_g)) +
+  geom_histogram(binwidth = 2000) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-distributions-6 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = body_mass_g)) +
+  geom_density() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-relationships-1 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-relationships-2 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = species, y = body_mass_g)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-relationships-3 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = species, y = body_mass_g)) +
+  geom_boxplot() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-relationships-4 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = body_mass_g, color = species)) +
+  geom_density(linewidth = 0.75) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-relationships-5 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = body_mass_g, color = species, fill = species)) +
+  geom_density(alpha = 0.5) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-relationships-6 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = island, fill = species)) +
+  geom_bar() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-relationships-7 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = island, fill = species)) +
+  geom_bar(position = "fill") </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-relationships-8 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-relationships-9 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point(aes(color = species, shape = island)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> visualizating-relationships-10 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point(aes(color = species, shape = species)) +
+  facet_wrap(~island) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> saving-your-plots-1 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = flipper_length_mm, 
+                     y = body_mass_g)) +
+  geom_point() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> saving-your-plots-2 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point()
+
+ggsave(filename = "penguin-plot.png") </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> saving-your-plots-3 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> my_plot &lt;- ggplot(penguins, aes(x = flipper_length_mm, 
+                     y = body_mass_g)) +
+  geom_point()
+
+my_plot </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> saving-your-plots-4 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> my_plot &lt;- ggplot(penguins, aes(
+  x = flipper_length_mm,
+  y = body_mass_g
+)) +
+  geom_point()
+
+ggsave(filename = "penguin-plot.png", plot = my_plot) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> saving-your-plots-5 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> ggplot(data = mpg) 
++ geom_point(mapping = aes(x = displ, y = hwy)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> minutes </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> 50 </td>
+  </tr>
+</tbody>
+</table>
