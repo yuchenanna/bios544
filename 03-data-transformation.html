@@ -1,0 +1,291 @@
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> id </th>
+   <th style="text-align:left;"> submission_type </th>
+   <th style="text-align:left;"> answer </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> tutorial-id </td>
+   <td style="text-align:left;"> none </td>
+   <td style="text-align:left;"> 03-data-transformation </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> name </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> yuchen gong </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> email </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> yagong@emory.edu </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ID </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> 2788730 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-1 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> library(tidyverse) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-2 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> library(nycflights13) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-3 </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> airlines	Airline names.
+airports	Airport metadata
+flights	Flights data
+planes	Plane metadata.
+weather	Hourly weather data </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-4 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-5 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> glimpse(flights) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-6 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; print() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-7 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; filter(dep_delay &gt; 120) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-8 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; nrow() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-9 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; filter(month == 1 &amp; day == 1) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-10 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; filter(month == 1 , day == 1) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-11 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; filter(month %in% c(1,2)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-12 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> jan1 &lt;- flights |&gt; filter(month == 1 &amp; day == 1) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-13 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; filter(month == 1 &amp; day == 1) -&gt; jan1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-14 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; arrange(year, month, day, dep_time) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-15 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; arrange(desc(dep_delay)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-16 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; distinct() </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-17 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; distinct(origin) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-18 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; distinct(origin, dest) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-19 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; distinct(origin, dest, .keep_all = TRUE) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rows-20 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; count(origin, dest, sort = TRUE) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> columns-1 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; 
+  mutate(gain = dep_delay - arr_delay) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> columns-2 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; mutate(speed = distance / air_time *60) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> columns-3 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; mutate(speed = distance / air_time *60, .before = 1) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> columns-4 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; mutate(speed = distance / air_time *60, .after = day) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> columns-5 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; mutate(speed = distance / air_time *60, .keep = "used") </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> columns-6 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; select(year, month, day) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> columns-7 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; select(year:day) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> columns-8 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; select(!year:day) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> columns-9 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; select(where(is.character)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> columns-10 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; select(tail_num = tailnum) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> columns-11 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; rename(tail_num = tailnum) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> columns-12 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; relocate(time_hour, air_time) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the-pipe-1 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; filter(dest == "IAH") </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the-pipe-2 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; mutate(speed = distance/air_time) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the-pipe-3 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; mutate(speed = distance/air_time, .before=1) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the-pipe-4 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; mutate(speed = distance / air_time * 60, .before=1) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the-pipe-5 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; mutate(speed = distance / air_time * 60, .before=1) |&gt;
+select(year:day, dep_time, carrier, flight, speed) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the-pipe-6 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; mutate(speed = distance / air_time * 60, .before=1) |&gt;
+select(year:day, dep_time, carrier, flight, speed) |&gt;
+arrange(desc(speed)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> groups-1 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; summarize(mean(dep_delay)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> groups-2 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; summarize(mean(dep_delay, na.rm = TRUE)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> groups-3 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; mutate(delay = mean(dep_delay, na.rm = TRUE)) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> groups-4 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt;
+  summarize(delay = mean(dep_delay, na.rm = TRUE), .by = month) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> groups-5 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt;
+  summarize(delay = mean(dep_delay, na.rm = TRUE), .by = month, n = n()) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> groups-6 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; slice_head(n=3) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> groups-7 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; slice_tail(n=8) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> groups-8 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; slice_sample(n=6) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> groups-9 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; slice_max(order_by = dep_delay, n = 5) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> groups-10 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; slice_min(order_by = dep_delay, n=5) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> groups-11 </td>
+   <td style="text-align:left;"> exercise </td>
+   <td style="text-align:left;"> flights |&gt; slice_min(order_by = dep_delay, n=1, by = origin) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> minutes </td>
+   <td style="text-align:left;"> question </td>
+   <td style="text-align:left;"> 30 </td>
+  </tr>
+</tbody>
+</table>
